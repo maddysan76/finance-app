@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aurora Finance</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <div class="aurora"></div>
+  <div class="page">
+    <header class="hero">
+      <nav class="nav">
+        <div class="logo">Aurora Finance</div>
+        <div class="nav-actions">
+          <button class="ghost">Log in</button>
+          <button class="primary">Get started</button>
+        </div>
+      </nav>
+      <div class="hero-content">
+        <div>
+          <p class="eyebrow">Aurora-grade clarity for your money</p>
+          <h1>Plan, pay, and hit goals with a living financial compass.</h1>
+          <p class="hero-subtitle">
+            Aurora Finance blends recurring payments, AI guidance, and individualized access with a tracker that
+            predicts when you will reach every target.
+          </p>
+          <div class="hero-cta">
+            <button class="primary">Create your space</button>
+            <button class="ghost">View live demo</button>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h2>Financial Goal Tracker</h2>
+          <p class="muted">Project when you will hit your next savings milestone.</p>
+          <div class="tracker">
+            <div class="tracker-row">
+              <span>Goal: Home down payment</span>
+              <strong>$45,000</strong>
+            </div>
+            <div class="progress">
+              <div class="progress-fill" style="width: 62%"></div>
+            </div>
+            <div class="tracker-row">
+              <span>Estimated finish</span>
+              <strong>June 2027</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="features">
+      <div class="feature">
+        <h3>Recurring Payments</h3>
+        <p class="muted">Automate bills, subscriptions, and savings sweeps with smart reminders.</p>
+        <div class="pill-row">
+          <span class="pill">Rent • Monthly</span>
+          <span class="pill">Investments • Weekly</span>
+          <span class="pill">Utilities • Auto-pay</span>
+        </div>
+      </div>
+      <div class="feature">
+        <h3>AI Assistant</h3>
+        <p class="muted">Ask Aurora AI to optimize cash flow, suggest cutbacks, and surface anomalies.</p>
+        <div class="assistant">
+          <div class="assistant-bubble">"You can hit your travel fund 4 months faster by boosting savings $120/mo."</div>
+          <div class="assistant-input">
+            <input type="text" placeholder="Ask Aurora AI anything..." />
+            <button class="primary">Send</button>
+          </div>
+        </div>
+      </div>
+      <div class="feature">
+        <h3>Individual Logins</h3>
+        <p class="muted">Secure workspaces for families, teams, and advisors with granular permissions.</p>
+        <div class="login-stack">
+          <div class="login-card">
+            <span>Jordan Lee</span>
+            <small>Owner</small>
+          </div>
+          <div class="login-card">
+            <span>Riley Chen</span>
+            <small>Advisor</small>
+          </div>
+          <div class="login-card">
+            <span>Taylor Park</span>
+            <small>Member</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="versions">
+      <div class="section-header">
+        <h2>Two versions ready to ship</h2>
+        <p class="muted">Switch between a demo experience and a clean version with no data.</p>
+      </div>
+      <div class="version-grid">
+        <div class="version-card">
+          <div class="version-header">
+            <h3>Demo version</h3>
+            <span class="tag">Sample data</span>
+          </div>
+          <div class="version-block">
+            <h4>Recurring payments</h4>
+            <ul>
+              <li>Mortgage • $2,350 • 1st monthly</li>
+              <li>Gym • $89 • 14th monthly</li>
+              <li>Crypto DCA • $150 • Fridays</li>
+            </ul>
+          </div>
+          <div class="version-block">
+            <h4>Goal tracker</h4>
+            <div class="goal-form" data-goal="demo">
+              <label>
+                Current savings
+                <input type="number" value="14250" />
+              </label>
+              <label>
+                Goal amount
+                <input type="number" value="50000" />
+              </label>
+              <label>
+                Monthly contribution
+                <input type="number" value="950" />
+              </label>
+              <div class="goal-output">
+                <span>Estimated date</span>
+                <strong>—</strong>
+              </div>
+            </div>
+          </div>
+          <div class="version-block">
+            <h4>Aurora AI</h4>
+            <p class="muted">"Shift your vacation fund to $480/month and you will be ready by March 2026."</p>
+          </div>
+        </div>
+
+        <div class="version-card clean">
+          <div class="version-header">
+            <h3>Clean version</h3>
+            <span class="tag">No data</span>
+          </div>
+          <div class="version-block">
+            <h4>Recurring payments</h4>
+            <p class="muted">No scheduled payments yet.</p>
+          </div>
+          <div class="version-block">
+            <h4>Goal tracker</h4>
+            <div class="goal-form" data-goal="clean">
+              <label>
+                Current savings
+                <input type="number" placeholder="0" />
+              </label>
+              <label>
+                Goal amount
+                <input type="number" placeholder="0" />
+              </label>
+              <label>
+                Monthly contribution
+                <input type="number" placeholder="0" />
+              </label>
+              <div class="goal-output">
+                <span>Estimated date</span>
+                <strong>Enter your numbers</strong>
+              </div>
+            </div>
+          </div>
+          <div class="version-block">
+            <h4>Aurora AI</h4>
+            <p class="muted">Connect accounts to unlock insights.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
